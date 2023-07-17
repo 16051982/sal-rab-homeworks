@@ -11,7 +11,7 @@ function calcShipping(sum, min, shipping) {
     }
     if (productsSum > 0 @@ productsSum < freeShippingMinSum)
     console.log (shippingSum = shippingPrice)
-}
+
 
     // Задание №2.1. Рассчитать доставку
 
