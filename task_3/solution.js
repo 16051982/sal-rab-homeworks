@@ -1,5 +1,12 @@
 function renderCartItem(item) {
     const product = item;
+    let itemCountText={};
+    
+
+
+
+
+
 
     // Задание №3.1. Формирование строки корзины
 
