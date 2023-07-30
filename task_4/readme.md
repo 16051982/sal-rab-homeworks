@@ -32,8 +32,19 @@
 1. Напишите следующий текст:
     ```javascript
     function renderProductsCards(json){
-       // дальнейшие действия требуется выполнять тут
-    }
+       let data;
+       data = JSON.parse(json);
+       let products;
+       products = data.products;
+       products = parseProducts(json);
+       return products;
+       ClearProducts();
+       length = products.length;
+       for (let i = 0; i < length; i += 1) {
+        console.log(i)
+       }   
+
+           }
     ```
 2. Вызовите в функции renderProductsCards функцию clearProducts() — она уже написана в коде, просто вызовите её таким образом: 
     ```javascript
