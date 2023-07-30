@@ -6,12 +6,10 @@ function calcShipping(sum, min, shipping) {
     if (productsSum == 0||productsSum >= freeShippingMinSum) {
         shippingSum=0;
     } else {
-        productsSum>0 && productsSum<freeShippingMinSum
         shippingSum=shippingPrice;
     }
 
-    }
-        // Задание №2.1. Рассчитать доставку
+            // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingSum
 
@@ -35,12 +33,10 @@ function calcDiscount(sum, min, discount) {
     let discountPart = discount; // величина скидки в процентах
     let discountSum;
     if (productsSum >= discountMinSum) {
-        console.log (discountSum =(discount*productsSum)/100);
+        discountSum =discount*productsSum/100;
      } else {
-    console.log (discountSum = 0);
+    discountSum = 0;
      }
-
-
     // Задание №2.2. Рассчитать скидку
 
     // создайте переменную discountSum
@@ -57,13 +53,11 @@ function calcDiscount(sum, min, discount) {
 function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shippingPrice}) {
     let productsSum = sum;
     let discountSum = calcDiscount(sum, discountMinSum, discountPart);
-
     // Задача №2.3. Рассчитать скидки и доставку в корзине
     let totalSum;
     totalSum = productsSum;
     totalSum= productsSum-discountSum;
-    console.log(totalSum);
-    
+      
     // создайте переменную totalSum
 
     // присвойте totalSum значение productsSum
@@ -71,11 +65,9 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
 
     let shippingSum = calcShipping(totalSum, shippingFreeMinSum, shippingPrice); // не изменяйте эту строку!!!
 
-    console.log (totalSum + shippingSum)
+    totalSum = totalSum + shippingSum;
     let freeShipping;
-    let y = totalSum+shippingSum;
-    console.log(y);
-    
+    totalSum = totalSum+shippingSum;    
     let shippingSum=0;
     let freeShipping=true;
     console.log(shippingSum=0 && freeShipping===true);
